@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	overflow: hidden;
+}
+
+.webgl {
+	position: fixed;
+	top: 0;
+	left: 0;
+	outline: none;
+}
+
+.iframe {
+	position: absolute;
+	top: 380px;
+	left: 208px;
+	width: 1350px;
+	height: 420px;
+	overflow: hidden;
+	z-index: 200;
+	scale: 0.4;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+iframe {
+	transform: scale(1);
+	overflow: hidden;
+}
