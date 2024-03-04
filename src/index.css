@@ -15,6 +15,7 @@ body {
 	outline: none;
 }
 
+/* Styling the iframe to fit the computer model */
 .iframe {
 	position: absolute;
 	top: 380px;

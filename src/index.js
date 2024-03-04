@@ -8,8 +8,13 @@ const canvas = document.querySelector("canvas.webgl");
 
 // Create a scene
 const scene = new THREE.Scene();
+
+//Setting the background color of the scene
 scene.background = new THREE.Color("Beige");
 
+//Adding the orbit controls to the scene
+
+/* Adding our 3D model */
 //Loading the 3D model
 const loader = new GLTFLoader();
 loader.load("/Computer.glb", (gltf) => {
@@ -52,6 +57,7 @@ window.addEventListener("resize", () => {
 const renderer = new THREE.WebGLRenderer({ canvas: canvas });
 /* Setting the renderer size to the full width of the webpage */
 renderer.setSize(window.innerWidth, window.innerHeight);
+//Setting the background color of the renderer
 // renderer.setClearColor("beige", 1);
 
 //Geometry
@@ -59,8 +65,6 @@ const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 const cube = new THREE.Mesh(geometry, material);
 // scene.add(cube);
-
-/* Adding our 3D model */
 
 /* Animating the renderer to constantly show our 3D scene */
 //animate
